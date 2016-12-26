@@ -20,9 +20,21 @@ $characters = [
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<h1>Book</h1>
-<p>Description</p>
-<h2>Main Characters</h2>
+<!-- <h1>Book: <?= $book['title'];?> by <?= $book['author'];?> </h1> -->
+<!-- OR: -->
+<h1> <?= "{$book['title']} by {$book['author']}" ?> </h1>
 
+
+
+</optgroup>
+<p>Description:<?='"' . $book['title'] .'" is ' . $book['description']; ?> </p>
+<h2>Main Characters</h2>
+<ul>
+  <li><?= $characters[0]; ?></li>
+  <li><?= $characters[1]; ?></li>
+  <li><?= $characters[2]; ?></li>
+  <li><?= $characters[3]; ?></li>
+  <li><?= $characters[4]; ?></li>
+</ul>
 </body>
 </html>
