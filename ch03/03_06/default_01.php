@@ -1,6 +1,8 @@
 <?php
-//$unit_cost = 0;
+// $unit_cost = 0;
+//zero treated as false
 
-$wholesale_price = $unit_cost ?: 25;
+//null-coalesce operator
+$wholesale_price = $unit_cost ?? 25;
 
 echo $wholesale_price;
