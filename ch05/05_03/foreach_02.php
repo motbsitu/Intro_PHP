@@ -14,6 +14,9 @@ $descriptions = [
 </head>
 <body>
 <h1>Descriptions</h1>
-
+  <?php
+    foreach ($descriptions as $key => $value) {
+      echo "<p>$key is $value.</p>";
+    }?>
 </body>
 </html>

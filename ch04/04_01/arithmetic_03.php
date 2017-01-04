@@ -2,4 +2,7 @@
 $a = 5;
 $b = 2;
 
-echo $a ** $b;
+//squares
+echo $a ** $b . '<br>';  //25
+
+echo pow($a, $b);
